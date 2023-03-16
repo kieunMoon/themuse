@@ -1,0 +1,107 @@
+*{
+    
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding: 0px;
+    
+  }
+
+
+.section02 { 
+    text-align: center;
+  }
+  .section02 .title {
+    
+    font-size: 60px;
+    color: #FCF8A6;
+    text-align: center;
+    display: block;
+    background-color: #900d09;
+    padding: 30px 0;
+  }
+ 
+/*포스터*/
+  .section02 .post {
+    width: 220px; 
+    position:relative;
+    height: 308px;
+    box-shadow: 10px 10px 10px #4a4a4a;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display:inline-flex;
+    /* justify-content:space-evenly; */
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    /* grid-gap:  20px 20px; */
+  }
+  /*포스터이미지*/
+  .postImg {
+    box-shadow: 10px 10px 10px #4a4a4a;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+  }
+  /*포스터 마우스오버*/
+.postImg:hover {
+  transform: scale(1.08);
+  transition: all 0.3s;
+}
+
+
+/*디데이 도넛*/
+  .donutdday {
+    margin: -15px 0px 0 auto;
+    /* right:35px; */
+    width: 111px;
+    height: 111px;
+    line-height: 111px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 101px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+  }
+  /*공연 기간*/
+.period {
+  color:#ffeec5;
+  font-size:14px;
+  position: absolute;
+  width:103%;
+  top:400px;
+  text-align: center;
+}
+ /*뮤지컬 이름*/
+ .contents1_bold {
+  color:#ffeec5;
+  float: left;
+   position: absolute;
+   top: 330px;
+   width: 101%;
+   text-align: center;
+   margin: 10px;
+   font-size: 18px;
+ }
+
+
+/*뮤지컬 가로로 묶는 박스*/
+.mList {
+  padding-top:50px;
+  padding-bottom:150px;
+
+  text-align: center;
+
+}
+
+.back {
+  background-color: #121212;
+}
+

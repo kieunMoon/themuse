@@ -1,0 +1,24 @@
+/* #wrapper{
+  height : auto;
+  min-height: 100%;
+} */
+.footer{
+  
+    background: #121212;
+    padding:30px;
+    height:100px;
+    position: absolute in !important;
+   
+    bottom: 0;
+    width: 100%;
+  }
+  .footer > div:first-child {
+    flex:3;
+    text-align: center;
+    color: #fff;
+  }
+  .footer > div:last-child {
+    flex:9;
+    color: #fff;
+  }
+  

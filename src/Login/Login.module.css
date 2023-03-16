@@ -1,0 +1,123 @@
+@keyframes fadein {
+    from { opacity: 0.4; }
+    to {  opacity: 1; }
+  }
+/*백그라운드 이미지*/
+.backimg{
+    top:100px;
+    width:100%;
+    overflow:hidden;
+    height: 1080px;
+
+}
+.backimg .loginImg {
+   
+    top:100px;
+    width: 1920px;
+    height:1080px;
+    left:0px;
+}
+/*백그라운드 이미지 어둡게*/
+.backimg::before{
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    height:980px;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    
+    
+}
+
+
+.SigninCard {
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    float: left;
+    display: block;
+    width: 670px;
+    height:480px;
+    top:265px;
+    left:31%;
+    background-color: #FEFDF8; 
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #d9d9d9;
+    padding-top:30px;
+    padding-left: 60px;
+    padding-right: 70px;
+    padding-bottom: 100px;
+    /* border-radius: 2rem; */
+}
+/*입력창*/
+.SigninCard input {
+    border-radius: 0.2rem;  
+    width:300px;
+    height:40px;
+   margin-bottom: 5px;
+   background-color:rgb(255, 255, 255);
+   outline-color:#900d09;
+   font-size: 18px;
+   border: 1px solid #c5c5c5;
+}
+/*Sign in 글씨*/
+.signIn {
+    margin:0px;
+    position: relative;
+    top:0; 
+    text-decoration: none;
+    font-size: 40px;
+    margin-bottom: 30px;   
+}
+
+.signIntext {
+    font-weight: bold;
+    text-align: center;
+    font-size:19px;
+}
+/*카드 속*/
+/* .SigninCard card {
+    top:150px;
+    display: block;
+    width:300px;
+    padding:0px;
+} */
+.SigninCard .signIntext  {
+    padding-bottom: 20px;
+    padding-top: 20px; 
+
+
+}
+/*회원가입,로그인 버튼 */
+.SigninCard button {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top:30px;
+    font-size: 18px;
+    width: 100px;
+    height:40px;
+    border:none;
+    border-radius: 0.3rem;
+}
+.SigninCard button:hover {
+
+    background: rgb(144,13,9,0.9);
+
+    animation: fadein 0.8s;
+}
+/*환영 스탬프*/
+.stamp {
+    position: absolute;
+    left:450px;
+    bottom: 5px;
+    width: 190px;
+    /* margin-left: 30pc; */
+}
+.card{
+    text-align: center;
+}

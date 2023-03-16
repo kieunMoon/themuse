@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@keyframes fadein {
+    from { opacity: 0.6; }
+    to {  opacity: 1; }
+  }
+
+.boxL {
+    float: left;
+    width: 600px;
+    margin-left: 200px;
+}
+
+.boxR {
+    float: left;
+    width: calc(100% - 1000px);
+    padding-top: 20px;
+    padding-left: 150px;
+    
+}
+
+.box::after {
+    clear: both;
+    display: block;
+    content: "";
+    margin-bottom: 100px;
+}
+
+.imgbox {
+    text-align: center;
+    padding-top: 100px;
+    /* border: 3px solid red; */
+    width: 100%;
+
+}
+
+/*포스터*/
+.poster {
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*뮤지컬 이름*/
+.name {
+    font-size: 25px;
+    text-decoration: underline solid 2px #121212;
+    text-underline-offset: 20px;
+    margin: 60px 200px;
+}
+
+/*공연 정보*/
+.info {
+    list-style: none;
+}
+
+.info li {
+    font-size: 20px;
+    /* margin-top:40px; */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #121212;
+    background-color: rgb(255 238 197 / 30%);
+}
+
+.info li p {
+    font-size: 18px;
+    margin-top: 50px;
+    font-style: none;
+
+}
+
+
+
+
+
+/*상세정보&리뷰 카테고리박스 */
+.tagOne {
+    /* border: 3px solid blue; */
+    height: 100px;
+}
+
+.tagTwo {
+    margin-top: 100px;
+    /* border: 3px solid blue; */
+    height: 100px;
+
+}
+
+.tag1 {
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-left: 200px;
+    /* margin-top:100px; */
+    background: #121212;
+   
+
+}
+
+.tag1 p {
+    text-align: center;
+    color:#ffeec5;
+    font-weight: bold;
+    margin: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+}
+
+.tag2 {
+    float: left;
+    width: 100px;
+    height: 40px;
+    color:#ffeec5;
+    font-weight: bold;
+    background: rgba(170, 17, 17, 0.7);
+   
+}
+
+.tag2 p {
+    font-weight: bold;
+    text-align: center;
+    margin: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    color:#ffeec5;
+}
+
+/*구분선 1*/
+.hr1 {
+    float: left;
+    margin-left: 200px;
+    width: 86.5%;
+    height: 0px;
+    border: 1px solid #121212;
+}
+
+/*상세정보 이미지*/
+
+.detailimg {
+
+
+    /* left:27%; */
+    max-width:1000px;
+    min-width:950px;
+    height:auto;
+    width: auto;
+
+}
+
+/*상세정보&리뷰 카테고리박스 */
+.tag3 {
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-left: 200px;
+    /* margin-top:100px; */
+    background: rgba(170, 17, 17, 0.7);
+   
+
+}
+
+.tag3 p {
+    text-align: center;
+    color:#ffeec5;
+    font-weight: bold;
+    margin: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+}
+
+.tag4 {
+    float: left;
+    width: 100px;
+    height: 40px;
+
+    /* margin-top:100px; */
+    background: #121212;
+    
+   
+}
+
+.tag4 p {
+    color:#ffeec5;
+    font-weight: bold;
+    text-align: center;
+    margin: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+}
+
+/*구분선 2*/
+.hr2 {
+
+    float: left;
+    margin-left: 200px;
+    width: 86.5%;
+    height: 0px;
+    border: 1px solid #121212;
+}
+
+/*리뷰*/
+
+/*리뷰 작성부분 글씨*/
+.reviews p {
+    /* border-bottom: 1px dotted #D9D9D9; */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-style: none;
+    
+
+}
+
+/*닉네임*/
+.nickName {   
+    width:50%;
+    float:left; 
+}
+
+/*날짜*/
+.date {
+    width:50%;
+    float:left;
+}
+
+
+/*댓글*/
+.comment {
+    
+    /* border: 3px solid red; */
+    width:80%;
+    border-bottom: 1px dotted #121212; 
+    
+    
+}
+/*댓글 폰트*/
+.comment p {
+    font-family: 'Pretendard-Regular';
+    font-size:17px;
+    
+}
+
+/*리뷰 작성 부분*/
+.reviewwrite {
+    
+    padding: 0 20px;
+    font-size: 16px;
+    border-radius: 0.2rem;
+    width: 80%;
+    height: 40px;
+    border: none;
+    background: rgba(255, 191, 67, 0.3);
+    margin-bottom: 50px;
+    font-family: 'Pretendard-Regular';
+}
+/*'리뷰 작성' 글씨 */
+.reviewWrite p {
+    font-size:25px;
+}
+/*리뷰 부분 전체 묶음*/
+.reviews {
+    
+    padding-left: 200px;
+    padding-right: 225px;
+   
+}
+/*등록 버튼*/
+.finish {
+   
+    margin-left: 50px;
+    font-weight: bold;
+    width: 80px;
+    height: 40px;
+    font-style: bord;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.2rem;
+}
+/*버튼 마우스오버 효과*/
+.finish:hover {
+    background: rgb(144, 13, 9, 0.9);
+    animation: fadein 0.7s;
+}
+.update:hover {
+    background: rgb(144, 13, 9, 0.9);
+    animation: fadein 0.7s;
+}
+.delete:hover {
+    background: rgb(144, 13, 9, 0.9);
+    animation: fadein 0.7s;
+}
+/*수정&삭제 버튼 묶은 박스 */
+.btn {
+    width: 200px;
+    float: right;
+    position: relative;
+    top: -110px;
+}
+.reviewBox::after {
+    clear: both;
+    display: block;
+    content: "";
+    /* margin-bottom: 100px; */
+}
+/*수정 버튼*/
+.update {
+    margin-left: 10px;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    font-style: bord;   
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.2rem;
+}
+/*삭제 버튼*/
+.delete {
+    margin-left: 10px;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    font-style: bord;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.2rem;
+}
+/*좋아요부분 박스 */
+.likesBox {
+    padding:20px;
+    background-color: rgb(255 238 197 / 30%);
+    border-bottom: 1px dotted #121212;
+} 
+  
+/*좋아요 하트 버튼*/
+.heartSection button {
+    color: #900d09;
+    border: 0;
+    background-color: transparent;
+    font-size: 48px;
+    line-height: 28px;
+}
+/*Likes 글자 */
+.likes {
+    font-size: 20px;
+}

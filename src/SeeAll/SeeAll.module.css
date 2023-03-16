@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+   
+
+}
+.body {
+    margin: 0;
+    min-width: 992px;
+    font-family: "Helvetica";
+  }
+  
+.seeAllBack {
+  background-color: #121212;
+}
+
+ 
+/*전체보기 글씨 배경색*/
+  .hero_header{
+    height: 280px;
+    width: 100%;
+    background: #121212;
+    text-align: center;
+    position:relative;
+
+  } 
+  /*전체보기 글씨*/
+.products h1 {
+  position: relative;
+  bottom:200px;
+  text-align: center;
+  color:#ffeec5;
+  font-size: 44px;
+ 
+  
+}
+
+
+
+
+/*뮤지컬 리스트 담는 박스*/
+.products {
+   background-color: #121212;
+    margin-right:auto;
+    padding: 0;
+    width: 1600px;
+    text-align: center;
+    padding:110px;
+    margin-left:auto;
+    
+}
+/*뮤지컬 포스터*/
+.products img{
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 10px 10px 10px #4a4a4a;
+    width: 220px;
+    height:auto;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+/*포스터 마우스오버*/
+.products img:hover {
+  transform: scale(1.08);
+  transition: all 0.3s;
+}
+/*뮤지컬 이름, 공연기간 글씨*/
+.products a {
+  /* margin-top: 10px; */
+  margin-bottom: 40px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    float: left;
+    font-size: 18px;
+    color:#ffeec5;
+}
+/*뮤지컬 이름&공연기간 글씨*/
+.products p { 
+padding:8px;
+}
+/*뮤지컬 이름 글씨*/
+.mName {
+  font-weight:bold;
+
+}
+/*공연날짜 글씨*/
+.period {
+  font-style: none;
+  font-size:14px;
+}
+
+.price{
+    margin-top: 4px;
+    margin-bottom: 80px;
+  }
+
+  .clearfix{
+    clear: both;
+  }
+
+

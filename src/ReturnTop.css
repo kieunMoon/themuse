@@ -1,0 +1,36 @@
+
+  .scroll__container{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 1;
+  }
+  #top{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 16px 10px;
+    background-color: #ffeec5;
+    /* color: #fff; */
+    border: 1px solid rgb(210, 204, 193);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    height: 64px;
+    width: 64px;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: 0px;
+    background-image: none;
+    right: 20px;
+    bottom: 20px;
+    /* padding: 24px; */
+    display: block;
+    position: fixed;
+    z-index: 100000;
+}
+  
+  #top:hover{
+    /* color :rgb(142, 26, 26); */
+    color: whitesmoke;
+  }
+
