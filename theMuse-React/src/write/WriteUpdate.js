@@ -107,7 +107,7 @@ const WriteUpdate = ({history, match}) => {
         history.push('/themuse');
     }
     
-    axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/musicaldetail/${musicalIdx}`,
+    axios.get(`http://localhost:8080/themuse/musicaldetail/${musicalIdx}`,
     { headers: { 'Authorization': `Bearer ${sessionStorage.getItem('token')}` } })
     .then(response=> {
       console.log(response);
@@ -129,7 +129,7 @@ const WriteUpdate = ({history, match}) => {
   const handlerClickUpdate = (e) => {
     axios({
       method: "put",
-      url: `http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/admin/updatedetailinfo/${musicalIdx}`,
+      url: `http://localhost:8080/themuse/admin/updatedetailinfo/${musicalIdx}`,
       data: fd,
       headers: {
         "Content-Type": `multipart/form-data; `,
@@ -152,7 +152,7 @@ const WriteUpdate = ({history, match}) => {
   };
 
   const handlerClickDelete = (e) => {
-    axios.put(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/admin/deleteinfo/${musicalIdx}`)
+    axios.put(`http://localhost:8080/themuse/admin/deleteinfo/${musicalIdx}`)
       .then(response => {                                         
         console.log(response);
         if (response.data === 1) {                              

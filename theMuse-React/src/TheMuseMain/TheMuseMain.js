@@ -11,20 +11,20 @@ import SimpleSlider from "./SimpleSlider";
 
 function TheMuseMain () {
     
-    const image = `http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/api/getImage/`;
+    const image = `http://localhost:8080/api/getImage/`;
     const [rankingDatas, setRankingDatas] = useState([]);
     const [mdPickDatas, setMdPickDatas] = useState([]);
 
 
     useEffect(() => {
-        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/main/rank`)
+        axios.get('http://localhost:8080/themuse/main/rank')
         .then(response => {
             console.log(response);
             setRankingDatas(response.data);
         })
         .catch(error => console.log(error));
 
-        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/main/pick`)
+        axios.get('http://localhost:8080/themuse/main/pick')
         .then(response => {
             console.log(response);
             setMdPickDatas(response.data);

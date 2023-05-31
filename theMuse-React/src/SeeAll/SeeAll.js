@@ -9,9 +9,9 @@ import styles from './SeeAll.module.css';
 function SeeAll ({history}) {
 
   const [datas, setDatas] = useState([]);
-  const image = `http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/api/getImage/`;
+  const image = `http://localhost:8080/api/getImage/`;
     useEffect(() => {
-        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/musicallist` , 
+        axios.get('http://localhost:8080/themuse/musicallist' , 
         { headers: { 'Authorization': `Bearer ${sessionStorage.getItem('token')}` } })
           .then(response => {
             console.log(response);

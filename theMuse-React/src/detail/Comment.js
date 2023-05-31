@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from './detail.module.css';
+import styles from 'C:/javascript/the-muse/src/detail/detail.module.css';
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 
@@ -18,7 +18,7 @@ function Comment ({history, musicalIdx}) {
         const token = sessionStorage.getItem('token');
         const decodedToken = jwt_decode(token);
 
-        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/musicaldetail/${musicalIdx}/getcomment`)
+        axios.get(`http://localhost:8080/themuse/musicaldetail/${musicalIdx}/getcomment`)
             .then(response => {
                 console.log(response);
                 setCommentList(response.data);
@@ -32,7 +32,7 @@ function Comment ({history, musicalIdx}) {
 
     const handlerSubmit = e => {
         e.preventDefault();
-        axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/musicaldetail/${musicalIdx}/insertcomment`,
+        axios.post(`http://localhost:8080/themuse/musicaldetail/${musicalIdx}/insertcomment`,
         { commentContent ,userNickname,musicalIdx })	
             .then(response => {								   
                 console.log(response);
@@ -55,7 +55,7 @@ function Comment ({history, musicalIdx}) {
         
             return;
         }
-        axios.put(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/musicaldetail/${commentIdx}/deletecomment`)
+        axios.put(`http://localhost:8080/themuse/musicaldetail/${commentIdx}/deletecomment`)
         .then(response => {
                                                    
             console.log(response);

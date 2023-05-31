@@ -1,6 +1,6 @@
 import { Component } from "react";
 import styles from './write.module.css';
-
+import logo from 'C:/javascript/the-muse/src/img/TheMuse_logo.jpg'
 
 
 const EditPage = () => {

@@ -24,7 +24,7 @@ const RegisterPage = ({history}) => {
                 return alert ('비밀번호가 같은지 확인해 주세요.');
             }
             
-            axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/regist`, 
+            axios.post('http://localhost:8080/regist', 
             {userId,
              userPassword,
              userNickname

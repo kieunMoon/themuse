@@ -9,12 +9,12 @@ function OpenData () {
     const [DDays, setDDays] = useState([]);
     const today = new Date();
     
-    const image = `http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/api/getImage/`;
+    const image = `http://localhost:8080/api/getImage/`;
 
 
     useEffect(() => {
         
-        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/main/open`)
+        axios.get('http://localhost:8080/themuse/main/open')
         .then(response => {
             console.log(response);
             setOpenDatas(response.data);

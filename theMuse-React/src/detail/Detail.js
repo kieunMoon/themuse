@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from './detail.module.css';
+import styles from 'C:/javascript/the-muse/src/detail/detail.module.css';
 import axios from "axios";
 import Comment from "./Comment";
 import LikeCount from "./LikeCount";
@@ -17,11 +17,11 @@ function Detail ({history, match}) {
     const [ musicalEndperiod, setMusicalEndperiod ] = useState('');
     const [ commentContent, setCommentContent ] = useState('');
     const [ musicalDetailImg, setMusicalDetailImg ] = useState('');
-    const image = `http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/api/getImage/`;
+    const image = `http://localhost:8080/api/getImage/`;
 
     useEffect(() => {
         console.log(match);
-        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/musicaldetail/${musicalIdx}`)
+        axios.get(`http://localhost:8080/themuse/musicaldetail/${musicalIdx}`)
         .then(response => {
             console.log(response);
             setDetails(response.data);

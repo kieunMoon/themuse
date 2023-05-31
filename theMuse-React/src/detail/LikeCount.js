@@ -1,5 +1,5 @@
 import { useEffect, useState }from "react";
-import styles from './detail.module.css';
+import styles from 'C:/javascript/the-muse/src/detail/detail.module.css';
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 import { Icon } from '@iconify/react';
@@ -18,7 +18,7 @@ function LikeCount({history, musicalIdx}) {
         console.log(decodedToken);
         setUserNickname(decodedToken.userNickname);
 
-        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/musicaldetail/${musicalIdx}/getlike`)
+        axios.get(`http://localhost:8080/themuse/musicaldetail/${musicalIdx}/getlike`)
             .then(response => {
                 console.log(response);
                 setMusicalLikeCt(response.data.musicalLikeCt);
@@ -35,7 +35,7 @@ function LikeCount({history, musicalIdx}) {
         
     if (!likeUpdate) {
         setMusicalLikeCt(musicalLikeCt +1)
-        axios.put(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/musicaldetail/${musicalIdx}/like`, 
+        axios.put(`http://localhost:8080/themuse/musicaldetail/${musicalIdx}/like`, 
         {musicalIdx})
         .then(response => {                           
             console.log(response);

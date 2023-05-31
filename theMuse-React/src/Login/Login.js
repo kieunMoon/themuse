@@ -1,9 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
-
+import { Route } from "react-router-dom";
+import logo from 'C:/javascript/the-muse/src/img/TheMuse_logo.jpg';
 import styles from './Login.module.css';
-import stamp from './login_stamp.png';
-import loginImg from  './login_background.jpg'
+import stamp from 'C:/javascript/the-muse/src/img/login_stamp.png';
+import loginImg from  'C:/javascript/the-muse/src/img/login_background.jpg'
 import { Link } from 'react-router-dom';
 
 
@@ -16,7 +17,7 @@ const Login = ({history}) => {
 
     const handlerOnLoginClick = e => {
        
-        axios.post(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/login`, { userId, userPassword })
+        axios.post('http://localhost:8080/login', { userId, userPassword })
             .then(response => {
                 console.log(response);
                 if (response.data) {

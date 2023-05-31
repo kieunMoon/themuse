@@ -1,7 +1,7 @@
 import { Route, Link } from 'react-router-dom';
 import { Component, useEffect, useState } from "react";
 import styles from './Header.module.css';
-import logo from './TheMuse_logo.png'
+import logo from 'C:/javascript/the-muse/src/Header/TheMuse_logo.png'
 
 import jwt_decode from "jwt-decode";
 

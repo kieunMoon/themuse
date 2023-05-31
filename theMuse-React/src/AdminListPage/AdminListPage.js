@@ -1,5 +1,5 @@
 import axios from "axios";
-import {useEffect, useState }from "react";
+import { Component, useEffect, useState }from "react";
 import styles from './AdminListPage.module.css';
 import { Link } from 'react-router-dom';
 import jwtDecode from "jwt-decode";
@@ -28,7 +28,7 @@ function AdminListPage ({history, match}) {
             history.push('/themuse');
         }    
         else{
-        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/musicallist`,
+        axios.get('http://localhost:8080/themuse/musicallist',
         { headers: { 'Authorization': `Bearer ${sessionStorage.getItem('token')}` } })
           .then(response => {
             console.log(response);
@@ -50,12 +50,15 @@ function AdminListPage ({history, match}) {
 
     return (
         <div>
-
+   
+    
+    
     {/* 왼쪽 메뉴바 */}
     <div className={styles.menu}>
         <th>관리자 페이지</th>
         <th><Link to="/themuse/admin">공연 리스트</Link></th>
         <th><Link to="/themuse/admin/write">공연 등록</Link></th>
+
 
     </div>
     {/* <p>공연 리스트</p> */}
@@ -74,8 +77,20 @@ function AdminListPage ({history, match}) {
 }
     </div> 
 
+        
+
+
 </div>
+
     );
+
 }
+
+
+
+
+
+
+
 
 export default AdminListPage;

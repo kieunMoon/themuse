@@ -3,7 +3,8 @@ import jwtDecode from "jwt-decode";
 import { Component, useEffect, useState } from "react";
 import Header from "../Header/Header";
 import styles from './write.module.css';
-
+import logo from 'C:/javascript/the-muse/src/img/TheMuse_logo.jpg'
+ 
 const Write =  ({history}) => {
     
 
@@ -141,7 +142,7 @@ const Write =  ({history}) => {
 
       axios({
         method: "post",
-        url: `http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/themuse/admin/insertmusical`,
+        url: `http://localhost:8080/themuse/admin/insertmusical`,
         data: fd,
         headers: {
           "Content-Type": `multipart/form-data; `,

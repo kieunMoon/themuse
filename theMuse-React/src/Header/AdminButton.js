@@ -7,7 +7,7 @@ function AdminButton() {
     const [IdDatas, setIdDatas] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://${process.env.REACT_APP_REST_API_SERVER_IP}:${process.env.REACT_APP_REST_API_SERVER_PORT}/regist`)
+        axios.get('http://localhost:8080/regist')
           .then(response => {
             console.log(response);
             setIdDatas(response.data.IdDatas);
